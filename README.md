@@ -13,3 +13,4 @@
     3   mollit anim id est laborum.
     ```
 3. When initially learning Vim, stop using (disable if you must) `←, ↓, ↑, →` to get used to `h, j, k, l`. Afterwards, avoid using `h, j, k, l` to move around and instead use more efficient methods such move using text movements (`w, e, b, (, {, etc.`) or the powerful search commands (`f, t, /, ?`)
+4. Map your `caps lock` to `esc` (this must be done outside Vim), it will make it easier to leave insert mode since your hand won’t have to leave the home row
