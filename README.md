@@ -12,3 +12,4 @@
     2   occaecat cupidatat non proident, sunt in culpa qui officia deserunt
     3   mollit anim id est laborum.
     ```
+3. When initially learning Vim, stop using (disable if you must) `←, ↓, ↑, →` to get used to `h, j, k, l`. Afterwards, avoid using `h, j, k, l` to move around and instead use more efficient methods such move using text movements (`w, e, b, (, {, etc.`) or the powerful search commands (`f, t, /, ?`)
