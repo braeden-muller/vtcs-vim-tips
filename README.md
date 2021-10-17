@@ -47,3 +47,8 @@
     1   occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo
           llit anim id est laborum.
     ```
+6. In addition to being able to yank and paste text, you can yank/paste text to
+    one of 26 registers denoted by each of the lowercase letters so you can have
+    several texts saved at once. These registers can be triggered via “<lowercase letter>
+    - Example: `"ryw` yanks a word and puts it in the `r` register
+    `"rp` pastes the word saved into the `r` register
