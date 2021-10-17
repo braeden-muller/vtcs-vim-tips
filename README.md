@@ -28,3 +28,22 @@
 4. Map your `caps lock` to `esc` (this must be done outside Vim), it will make
     it easier to leave insert mode since your hand won’t have to leave the home
     row.
+5. `j` and `k` move up and down lines separated by newline, skipping any sort of
+    overflow created from having lines be too long, even though they're visually
+    below the line you're currently on. If you wish to move up and down visual
+    lines on the screen instead of lines separated by newline, use `gj` and
+    `gk.` This is useful if you’re using Vim to type up an essay with paragraphs
+    that will likely overflow!
+
+    - Example: If your cursor is where the underline is next to *Duis*, pressing
+    `j` will make it go to the *p* in *proident* since that is where the formal
+    new line is, but pressing `gj` will make it go down to the *e* in *dolore*:
+    ```
+    2   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    1   veniam, quis nostrud exercitation ullamco laboris aliquip ex e
+    96  commodo consequat. Duis_ ute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+    1   occaecat cupidatat non proident, sunt in culpa qui officia deserunt mo
+          llit anim id est laborum.
+    ```
