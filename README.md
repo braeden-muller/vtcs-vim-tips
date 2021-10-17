@@ -52,3 +52,7 @@
     several texts saved at once. These registers can be triggered via “<lowercase letter>
     - Example: `"ryw` yanks a word and puts it in the `r` register
     `"rp` pastes the word saved into the `r` register
+7. Need to delete something in parenthesis? Just go inside that pair of
+    parenthesis and type `di(` [delete inside parenthesis]. You can replace `i`
+    with `a` (around) to delete the parenthesis as well. This works with
+    brackets, curly braces and anything else similar to that.
