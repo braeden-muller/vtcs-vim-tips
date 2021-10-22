@@ -76,3 +76,13 @@
     `man` page.
 11. Pressing `;` and `,` after typing `f/t` will bring you to the next/previous
     match of your target key.
+12. If you find yourself repeating a series of keys often you might want to
+    consider mapping that set of keys to a keystroke in your `vimrc`. Map
+    something by typing `map <keystroke> <combo of keys it represents>` to make
+    a `map` that works for normal and visual mode. It is recommended to add a
+    `key n (normal)`, `i (insert)`, `v (visual)`, etc. in front of the word
+    `map` to make it specific to a mode. It is also recommended to change it to
+    `noremap` which will prevent remapped keys from interfering with other
+    remapped keys.
+    - Example:  `nnoremap j gj` will make it so the `j` key moves down 1 visual
+    line instead of 1 actual line.
