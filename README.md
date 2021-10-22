@@ -74,3 +74,5 @@
         `test-big-word`.
 10. Pressing `Shift+K` while hovering over a word will look up that word's
     `man` page.
+11. Pressing `;` and `,` after typing `f/t` will bring you to the next/previous
+    match of your target key.
