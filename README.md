@@ -59,7 +59,7 @@
     brackets, curly braces and anything else similar to that.
 8. Need to repeat a series of motions several times? Create a macro using
     `q[a-z]` and then recording that series of motions and stopping it by
-    pressing `q` again. Afterwards this macro can be called by `@[a-z]``
+    pressing `q` again. Afterwards this macro can be called by `@[a-z]`
     - Example: `qa/(<Enter>di($pq` Creates a macro to find parenthesis and
         delete and paste it’s contents at the end of the line `@a` calls the
         macro to delete in parenthesis and paste at the end of the line
@@ -72,3 +72,5 @@
     - Example: `dw` at the start of the line `test-big-word` with more words
         after will delete `test`. `dW` at the start of the same line will delete
         `test-big-word`.
+10. Pressing `Shift+K` while hovering over a word will look up that word's
+    `man` page.
