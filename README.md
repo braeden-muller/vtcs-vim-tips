@@ -49,10 +49,19 @@
     ```
 6. In addition to being able to yank and paste text, you can yank/paste text to
     one of 26 registers denoted by each of the lowercase letters so you can have
-    several texts saved at once. These registers can be triggered via “<lowercase letter>
+    several texts saved at once. These registers can be triggered via
+    “<lowercase letter>
     - Example: `"ryw` yanks a word and puts it in the `r` register
     `"rp` pastes the word saved into the `r` register
 7. Need to delete something in parenthesis? Just go inside that pair of
     parenthesis and type `di(` [delete inside parenthesis]. You can replace `i`
     with `a` (around) to delete the parenthesis as well. This works with
     brackets, curly braces and anything else similar to that.
+8. Need to repeat a series of motions several times? Create a macro using
+    `q[a-z]` and then recording that series of motions and stopping it by
+    pressing `q` again. Afterwards this macro can be called by `@[a-z]``
+    - Example: `qa/(<Enter>di($pq` Creates a macro to find parenthesis and
+        delete and paste it’s contents at the end of the line `@a` calls the
+        macro to delete in parenthesis and paste at the end of the line
+        `10@a` calls the macro 10 times, pasting the contents of the first `()` at
+        the end of the line and then finding the next `(` and repeating the process
