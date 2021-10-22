@@ -63,5 +63,12 @@
     - Example: `qa/(<Enter>di($pq` Creates a macro to find parenthesis and
         delete and paste it’s contents at the end of the line `@a` calls the
         macro to delete in parenthesis and paste at the end of the line
-        `10@a` calls the macro 10 times, pasting the contents of the first `()` at
-        the end of the line and then finding the next `(` and repeating the process
+        `10@a` calls the macro 10 times, pasting the contents of the first `()`
+        at the end of the line and then finding the next `(` and repeating the
+        process.
+9. Words in vim are separated by spaces, minuses, punctuation some other general
+    symbols. If you want to refer to a word in the sense that it’s only
+    separated by spaces, use uppercase `W`.
+    - Example: `dw` at the start of the line `test-big-word` with more words
+        after will delete `test`. `dW` at the start of the same line will delete
+        `test-big-word`.
